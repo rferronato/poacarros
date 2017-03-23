@@ -1,10 +1,10 @@
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="poaCarros">
 
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Home 1</title>
+	<title>Poa Carrros</title>
 	<link rel="icon" href="favicon.ico">
 	<!-- JqueryUI -->
 	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
@@ -23,6 +23,12 @@
 	<link rel="stylesheet" type="text/css" href="css/padd-mr.css">
 	<!-- light version-->
 	<link id="vers" rel="stylesheet" type="text/css" href="css/light-version.css">
+
+	<style>
+		.owl-item {
+			width: 390px !important;
+		}
+	</style>
 </head>
 
 <body class="bg-3">
@@ -37,7 +43,9 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-6 col-md-6 col-lg-6 hidden-xs">
-							<p class="f-14"><i class="fa fa-map-marker m-r-lg-5"></i><strong>AUTOSHOP</strong> - 123 HOLDING, BUSAN, KOREA</p>
+							<p class="f-14"><i class="fa fa-map-marker m-r-lg-5"></i><strong>POACARROS</strong> - AV PRESIDENTE GETULIO VARGAS, 5528, PORTO ALEGRE,
+								BRASIL
+							</p>
 						</div>
 						<div class="col-sm-6 col-md-6 col-lg-6">
 							<ul class="pull-right">
@@ -111,7 +119,7 @@
 						</div>
 						<div class="col-md-9 col-lg-9">
 							<div class="hotline">
-								<span class="m-r-lg-10">Need support? Call us:</span>
+								<span class="m-r-lg-10">Precisa de Ajuda? Ligue:</span>
 								<i class="fa fa-phone"></i>0123-456-789
 							</div>
 							<div class="clearfix"></div>
@@ -122,7 +130,7 @@
 										<div class="container1-fluid">
 											<div class="navbar-header">
 												<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-													aria-expanded="false">
+												 aria-expanded="false">
 														<span class="sr-only">Toggle navigation</span>
 														<span class="icon-bar"></span>
 														<span class="icon-bar"></span>
@@ -134,32 +142,32 @@
 													<li class="dropdown">
 														<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
 														<ul class="dropdown-menu">
-															<li><a href="index_1.html">Car dealer 1</a></li>
+															<!--<li><a href="index_1.html">Car dealer 1</a></li>
 															<li><a href="index_2.html">Car dealer 2</a></li>
 															<li><a href="index_3.html">Car spares 1</a></li>
 															<li><a href="index_4.html">Car spares 2</a></li>
-															<li><a href="index_5.html">Car spares 3</a></li>
+															<li><a href="index_5.html">Car spares 3</a></li>-->
 														</ul>
 													</li>
 													<li class="dropdown">
 														<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Car Listing</a>
 														<ul class="dropdown-menu">
-															<li><a href="car_grid.html">Car Grid</a></li>
+															<!--<li><a href="car_grid.html">Car Grid</a></li>
 															<li><a href="car_list.html">Car List</a></li>
 															<li><a href="car_detail.html">Car Details</a></li>
 															<li><a href="dealer_detail.html">Dealer detail</a></li>
-															<li><a href="sell_a_car.html">Sell a car</a></li>
+															<li><a href="sell_a_car.html">Sell a car</a></li>-->
 														</ul>
 													</li>
 													<li class="dropdown">
-														<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Product</a>
+														<a href="product_list.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Veículos</a>
 														<ul class="dropdown-menu">
-															<li><a href="product_grid.html">product Grid</a></li>
+															<!--<li><a href="product_grid.html">product Grid</a></li>
 															<li><a href="product_list.html">Prouct List</a></li>
 															<li><a href="product_detail.html">product Details</a></li>
 															<li><a href="product_cart.html">product Cart</a></li>
 															<li><a href="product_checkout.html">product Checkout</a></li>
-															<li><a href="product_wishlist.html">product Wishlist</a></li>
+															<li><a href="product_wishlist.html">product Wishlist</a></li>-->
 														</ul>
 													</li>
 													<li class="dropdown">
@@ -175,7 +183,7 @@
 															<li><a href="register.html">Register</a></li>
 														</ul>
 													</li>
-													<li><a href="contact.html">Contact us</a></li>
+													<li><a href="contact.html">Contato</a></li>
 												</ul>
 											</div>
 										</div>
@@ -184,7 +192,7 @@
 									<div class="search-box">
 										<i class="fa fa-search"></i>
 										<form>
-											<input type="text" name="search-txt" placeholder="Search..." class="search-txt form-item">
+											<input type="text" name="search-txt" placeholder="Buscar..." class="search-txt form-item">
 											<button type="submit" name="submit" class="search-btn btn-1"><i class="fa fa-search"></i></button>
 										</form>
 									</div>
@@ -201,9 +209,9 @@
 				<div class="row">
 					<div class="col-sm-12 col-md-12 col-lg-12">
 						<div class="banner-item banner-2x no-bg color-inher">
-							<h2 class="f-weight-300">More <strong>20 000 </strong>Vehicle advaiable</h2>
+							<h2 class="f-weight-300">Mais de <strong>20 000 </strong>Veículos a disposição</h2>
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do</p>
-							<a href="#" class="ht-btn ht-btn-default ht-btn-2x m-t-lg-35">View all car</a>
+							<a href="#" class="ht-btn ht-btn-default ht-btn-2x m-t-lg-35">Ver todos os veículos</a>
 						</div>
 					</div>
 				</div>
@@ -220,13 +228,9 @@
 									<div class="select-wrapper">
 										<div class="dropdown">
 											<button class="dropdown-toggle form-item" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-													Condition
+													Condição
 												</button>
 											<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-												<li>Condition</li>
-												<li>New Car (4,500)</li>
-												<li>Used Cars (6,540)</li>
-												<li>Car Rental(9,960)</li>
 											</ul>
 										</div>
 									</div>
@@ -235,16 +239,10 @@
 									<div class="select-wrapper">
 										<div class="dropdown">
 											<button class="dropdown-toggle form-item" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-													Body
+													Categoria
 												</button>
 											<ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-												<li>Body</li>
-												<li>Sedan</li>
-												<li>SUV</li>
-												<li>Truck</li>
-												<li>Coupe</li>
-												<li>Minivan</li>
-												<li>Compact</li>
+
 											</ul>
 										</div>
 									</div>
@@ -253,19 +251,9 @@
 									<div class="select-wrapper">
 										<div class="dropdown">
 											<button class="dropdown-toggle form-item" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-													Make
+													Marca
 												</button>
 											<ul class="dropdown-menu" aria-labelledby="dropdownMenu3">
-												<li>Make</li>
-												<li>Ford</li>
-												<li>Huyndai</li>
-												<li>Nissan</li>
-												<li>Chevrolet</li>
-												<li>Kia</li>
-												<li>Mazda</li>
-												<li>BMW</li>
-												<li>Toyota</li>
-												<li>Mercedes Benz</li>
 											</ul>
 										</div>
 									</div>
@@ -274,20 +262,9 @@
 									<div class="select-wrapper">
 										<div class="dropdown">
 											<button class="dropdown-toggle form-item" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-													Model
+													Modelo
 												</button>
 											<ul class="dropdown-menu" aria-labelledby="dropdownMenu4">
-												<li>Model</li>
-												<li>Versa</li>
-												<li>Cruze</li>
-												<li>Malibu</li>
-												<li>Civic</li>
-												<li>Genesis</li>
-												<li>Pilot</li>
-												<li>Optima</li>
-												<li>CX-5</li>
-												<li>3 Serie</li>
-												<li>Atima</li>
 											</ul>
 										</div>
 									</div>
@@ -296,14 +273,9 @@
 									<div class="select-wrapper">
 										<div class="dropdown">
 											<button class="dropdown-toggle form-item" type="button" id="dropdownMenu5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-													Year
+													Ano
 												</button>
 											<ul class="dropdown-menu" aria-labelledby="dropdownMenu5">
-												<li>Year</li>
-												<li>2016</li>
-												<li>2015</li>
-												<li>2014</li>
-												<li>2012</li>
 											</ul>
 										</div>
 									</div>
@@ -312,13 +284,9 @@
 									<div class="select-wrapper">
 										<div class="dropdown">
 											<button class="dropdown-toggle form-item" type="button" id="dropdownMenu6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-													Transition
+													Transmissão
 												</button>
 											<ul class="dropdown-menu" aria-labelledby="dropdownMenu6">
-												<li>Transition</li>
-												<li>Automatic</li>
-												<li>Manual</li>
-												<li>Semi-automatic</li>
 											</ul>
 										</div>
 									</div>
@@ -330,7 +298,7 @@
 							<div class="slider-range"></div>
 						</div>
 						<div class="col-sm-3 col-md-2 col-lg-2 p-r-sm-0 pull-right pull-left-xs">
-							<button type="button" class="ht-btn ht-btn-default m-t-lg-30 m-t-sm-10 pull-right pull-left-xs"><i class="fa fa-search"></i> Search</button>
+							<button type="button" class="ht-btn ht-btn-default m-t-lg-30 m-t-sm-10 pull-right pull-left-xs"><i class="fa fa-search"></i> Buscar</button>
 						</div>
 					</div>
 				</div>
@@ -340,123 +308,39 @@
 		<div id="wrap-body" class="p-t-lg-45">
 			<div class="container">
 				<div class="wrap-body-inner">
-					<!-- Recent cars -->
+					<!-- Visitas Recentes -->
 					<div class="product product-grid product-grid-2 car m-t-lg-90 p-t-sm-35 m-b-lg-20">
 						<div class="heading">
-							<h3>RECENT CARS</h3>
+							<h3>Visitas Recentes</h3>
 						</div>
-						<div class="row">
-							<div class="owl" data-items="3" data-itemsDesktop="2" data-itemsDesktopSmall="2" data-itemsTablet="2" data-itemsMobile="1"
-								data-pag="false" data-buttons="true">
-								<div class="col-lg-12">
-									<!-- Product item -->
-									<div class="product-item hover-img">
-										<a href="#" class="product-img">
-											<img src="images/b-img-2.jpg" alt="image">
-										</a>
-										<div class="product-caption">
-											<h4 class="product-name">
-												<a href="#">HYUNDAI ELANTRA 2016 NEW MODEL / <b>new</b></a><span class="f-18"> $201,000</span>
-											</h4>
+						<div class="row" ng-controller="productController">
+							<data-owl-carousel class="owl-carousel">
+								<div owl-carousel-item="" ng-repeat="item in itemDetails">
+									<div class="col-lg-12">
+										<!-- Product item -->
+										<div class="product-item hover-img">
+											<a href="#" class="product-img">
+												<img src="images/b-img-2.jpg" alt="image">
+											</a>
+											<div class="product-caption">
+												<h4 class="product-name">
+													<a href="#">{{item.name}} / <b>{{item.state}}</b></a><span class="f-18"> ${{item.price}}</span>
+													<!--<a href="#">HYUNDAI ELANTRA 2016 NEW MODEL / <b>new</b></a><span class="f-18"> $201,000</span>-->
+												</h4>
+											</div>
+											<ul class="absolute-caption">
+												<li><i class="fa fa-clock-o"></i>{{item.year}}</li>
+												<li><i class="fa fa-car"></i>{{item.type}}</li>
+												<li><i class="fa fa-road"></i>{{item.fuel}}</li>
+											</ul>
 										</div>
-										<ul class="absolute-caption">
-											<li><i class="fa fa-clock-o"></i>2016</li>
-											<li><i class="fa fa-car"></i>Auto</li>
-											<li><i class="fa fa-road"></i>Gas</li>
-										</ul>
 									</div>
-								</div>
-								<div class="col-lg-12">
-									<!-- Product item -->
-									<div class="product-item hover-img">
-										<a href="#" class="product-img">
-											<img src="images/b-img-1.jpg" alt="image">
-										</a>
-										<div class="product-caption">
-											<h4 class="product-name">
-												<a href="#">KIA SOUL, BRAND NEW MODEL 2016 / <b>used</b></a><span class="f-18"> $201,000</span>
-											</h4>
-										</div>
-										<ul class="absolute-caption">
-											<li><i class="fa fa-clock-o"></i>2016</li>
-											<li><i class="fa fa-car"></i>Auto</li>
-											<li><i class="fa fa-road"></i>Gas</li>
-										</ul>
-									</div>
-								</div>
-								<div class="col-lg-12">
-									<!-- Product item -->
-									<div class="product-item hover-img">
-										<a href="#" class="product-img">
-											<img src="images/b-img-10.jpg" alt="image">
-										</a>
-										<div class="product-caption">
-											<h4 class="product-name">
-												<a href="#">FORD MUSTANG 2016 TURBO / <b>used</b></a><span class="f-18"> $201,000</span>
-											</h4>
-										</div>
-										<ul class="absolute-caption">
-											<li><i class="fa fa-clock-o"></i>2016</li>
-											<li><i class="fa fa-car"></i>Auto</li>
-											<li><i class="fa fa-road"></i>Gas</li>
-										</ul>
-									</div>
-								</div>
-								<div class="col-lg-12">
-									<!-- Product item -->
-									<div class="product-item hover-img">
-										<a href="#" class="product-img">
-											<img src="images/b-img-4.jpg" alt="image">
-										</a>
-										<div class="product-caption">
-											<h4 class="product-name">
-												<a href="#">HYUNDAI VELOSTER TURBO SPORT / <b>used</b></a><span class="f-18"> $201,000</span>
-											</h4>
-										</div>
-										<ul class="absolute-caption">
-											<li><i class="fa fa-clock-o"></i>2016</li>
-											<li><i class="fa fa-car"></i>Auto</li>
-											<li><i class="fa fa-road"></i>Gas</li>
-										</ul>
-									</div>
-								</div>
-								<div class="col-lg-12">
-									<!-- Product item -->
-									<div class="product-item hover-img">
-										<a href="#" class="product-img">
-											<img src="images/b-img-10.jpg" alt="image">
-										</a>
-										<div class="product-caption">
-											<h4 class="product-name">
-												<a href="#">HYUNDAI ELANTRA 2016 NEW MODEL / <b>used</b></a><span class="f-18"> $201,000</span>
-											</h4>
-										</div>
-										<ul class="absolute-caption">
-											<li><i class="fa fa-clock-o"></i>2016</li>
-											<li><i class="fa fa-car"></i>Auto</li>
-											<li><i class="fa fa-road"></i>Gas</li>
-										</ul>
-									</div>
-								</div>
-								<div class="col-lg-12">
-									<!-- Product item -->
-									<div class="product-item hover-img">
-										<a href="#" class="product-img">
-											<img src="images/b-img-11.jpg" alt="image">
-										</a>
-										<div class="product-caption">
-											<h4 class="product-name">
-												<a href="#">BMW 535I, NAVI, LEATHER, ABS / <b>used</b></a><span class="f-18"> $201,000</span>
-											</h4>
-										</div>
-										<ul class="absolute-caption">
-											<li><i class="fa fa-clock-o"></i>2016</li>
-											<li><i class="fa fa-car"></i>Auto</li>
-											<li><i class="fa fa-road"></i>Gas</li>
-										</ul>
-									</div>
-								</div>
+							</data-owl-carousel>
+
 							</div>
+
+
+
 						</div>
 					</div>
 					<!-- Banner -->
@@ -482,10 +366,10 @@
 								</div>
 								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod temp incidunt ut .</p>
 								<ul class="list-default">
-									<li><i class="fa fa-signal"></i>123 Holding, Busan, Korea</li>
+									<li><i class="fa fa-signal"></i>123 Holding, Porto Alegre, Brasil</li>
 									<li><i class="fa fa-phone"></i>0123-456-789</li>
-									<li><i class="fa fa-envelope-o"></i>Support@htmlcs.com</li>
-									<li><i class="fa fa-globe"></i>http://www.ndktheme.com</li>
+									<li><i class="fa fa-envelope-o"></i>Support@carrospoa.com</li>
+									<li><i class="fa fa-globe"></i>http://www.carrospoa.azurewebsites.net</li>
 								</ul>
 							</div>
 							<!-- Newsletter -->
@@ -526,7 +410,7 @@
 					<div class="bg-gray-0c p-l-r">
 						<div class="row">
 							<div class="col-md-6">
-								<p>© 2016 Designed by <a href="https://themeforest.net/user/t3theme">t3theme</a>. All rights reserved</p>
+								<p>© 2016 Designed by <a href="https://themeforest.net/user/t3theme">t3theme</a>. Todos os direitos reservados</p>
 							</div>
 							<div class="col-md-6">
 								<ul class="social-icon list-inline pull-right">
@@ -557,6 +441,10 @@
 	<script src="js/owl-coursel/owl.carousel.js"></script>
 	<!-- Script -->
 	<script src="js/script.js"></script>
+	<!-- angularjs -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+	<!-- controller -->
+	<script src="controllers/productController.js"></script>
 </body>
 
 </html>

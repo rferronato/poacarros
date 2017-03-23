@@ -1,0 +1,9 @@
+[
+    {"model":"Categoria"},
+    {"model":"Sedan"},
+    {"model":"SUV"},
+    {"model":"Truck"},
+    {"model":"Coupe"},
+    {"model":"Minivan"},
+    {"model":"Compact"}
+]

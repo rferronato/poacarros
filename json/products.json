@@ -1,0 +1,6 @@
+[
+    {"name":"HYUNDAI ELANTRA 2016 NEW MODEL", "price":"201,000", "state":"new", "year":"2016", "type":"Auto", "fuel":"Gasolina"},
+    {"name":"HYUNDAI ELANTRA 2012 NEW MODEL", "price":"195,000", "state":"new", "year":"2014", "type":"Auto", "fuel":"Diesel"},
+    {"name":"HYUNDAI ELANTRA 2022 NEW MODEL", "price":"160,000", "state":"new", "year":"2012", "type":"Auto", "fuel":"Gasolina"},
+    {"name":"HYUNDAI ELANTRA 2022 NEW MODEL", "price":"160,000", "state":"new", "year":"2010", "type":"Auto", "fuel":"Gasolina"}
+]
